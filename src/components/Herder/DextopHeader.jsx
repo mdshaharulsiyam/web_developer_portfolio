@@ -23,10 +23,12 @@ const DextopHeader = () => {
                         <i class="fas fa-briefcase"></i>
                     </span> works </a></li>
             </NavLink>
-            {/* <li> <a class="menu-item" href="contactOne.html">
-                <span class="text-xl mb-1">
-                    <i class="fa-solid fa-address-book"></i>
-                </span> Contact </a></li> */}
+            <NavLink to={'/contact'}>
+                <li> <a class="menu-item">
+                    <span class="text-xl mb-1">
+                        <i class="fa-solid fa-address-book"></i>
+                    </span> Contact </a></li>
+            </NavLink>
         </ul>
     )
 }

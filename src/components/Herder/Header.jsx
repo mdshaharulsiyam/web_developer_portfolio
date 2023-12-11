@@ -22,12 +22,20 @@ const Header = () => {
                 </li>
             </NavLink>
             <NavLink to={'/works'}>
-            <li>
-                <a class="mobile-menu-items">
-                    <span class="mr-2 text-xl">
-                        <i class="fas fa-briefcase"></i>
-                    </span>works </a>
-            </li>
+                <li>
+                    <a class="mobile-menu-items">
+                        <span class="mr-2 text-xl">
+                            <i class="fas fa-briefcase"></i>
+                        </span>works </a>
+                </li>
+            </NavLink>
+            <NavLink to={'/contact'}>
+                <li>
+                    <a class="mobile-menu-items-active">
+                        <span class="mr-2 text-xl">
+                            <i class="fa-solid fa-address-book"></i>
+                        </span> Contact </a>
+                </li>
             </NavLink>
         </ul>
     )
