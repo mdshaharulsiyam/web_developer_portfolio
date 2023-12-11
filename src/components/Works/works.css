@@ -1,0 +1,17 @@
+.project_list{
+    font-size: 20px;
+    transition: .5s ease all;
+    padding: 2px 0px;
+    list-style-type: circle;
+}
+.projects {
+    box-sizing: border-box;
+    font-size: 17px;
+    display: inline-block;
+    transition: .5s ease all;
+    padding: 2px 11px;
+}
+.projects:hover{
+    color: rgb(97, 120, 223);
+    transform: scale(1.1);
+}
