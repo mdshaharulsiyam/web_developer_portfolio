@@ -1,15 +1,20 @@
-import React from 'react'
 import "./works.css"
 import DextopHeader from '../Herder/DextopHeader'
 import Header from '../Herder/Header'
 import Sideber from '../Sideber/Sideber'
 import ThemeChange from '../ThemeChange/ThemeChange'
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import './styles.css';
+import { Pagination, Autoplay } from 'swiper/modules';
 const Works = () => {
-    document.title="Works | shaharul siyam"
+    document.title = "Works | shaharul siyam"
     return (
         <div>
             <div class="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
-              <ThemeChange/>
+                <ThemeChange />
                 <nav id="navbar" class="hidden lg:hidden">
                     <Header />
                 </nav>
@@ -18,7 +23,7 @@ const Works = () => {
                 <div class="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
 
                     <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
-                        <Sideber/>
+                        <Sideber />
                     </div>
                     <div class="col-span-12 lg:col-span-8">
 
@@ -37,15 +42,94 @@ const Works = () => {
 
                                         <div class="pb-12 px-2 sm:px-5 md:px-10 lg:px-14 dark:text-white">
                                             <h3 class="text-[35px] dark:text-white font-bold font-robotoSlab pb-5"> Fetured Projects</h3>
-                                            <div className='px-6'>
-                                                <ul style={{ listStyleType: 'none' }}>
-                                                    <li class="project_list"><a class="projects" target="_blank" href="https://gregarious-mandazi-69cbd9.netlify.app/">CareerHunt</a></li>
-                                                    <li class="project_list"><a class="projects" target="_blank" href="https://imaginative-ganache-4b307c.netlify.app/">FoodWave</a></li>
-                                                    <li class="project_list"><a class="projects" target="_blank" href="https://hilarious-longma-dfd9d4.netlify.app/">Elegance Wedding’s</a></li>
-                                                </ul>
+                                            <div className='px-6 grid grid-cols-1 md:grid-cols-2 gap-2'>
+                                                <div className="bg-red-50 shadow-2xl p-2 rounded-md dark:bg-black">
+                                                    <h3 className="text-center font-bold text-lg">CareerHunt</h3>
+                                                    <div className="h-56 overflow-hidden w-full">
+                                                        <Swiper pagination={true} autoplay={{ delay: 1500, disableOnInteraction: false }} modules={[Pagination, Autoplay]} className="mySwiper ">
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/Mkj1XJc/screencapture-gregarious-mandazi-69cbd9-netlify-app-Classes-2023-12-11-15-07-46.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/n3SC9k8/screencapture-gregarious-mandazi-69cbd9-netlify-app-2023-12-11-15-07-01.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/YhpkqwJ/screencapture-gregarious-mandazi-69cbd9-netlify-app-dashboard-dashboard-2023-12-11-15-08-15.png" alt="" />
+                                                            </SwiperSlide>
+
+                                                        </Swiper>
+                                                    </div>
+                                                    <button className="px-4 ml-2 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold">
+                                                        <a target="_blank" href="https://gregarious-mandazi-69cbd9.netlify.app/">visit site</a>
+                                                    </button>
+                                                    <button className="px-4 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold ml-2 ">
+                                                        <a target="_blank" href="https://github.com/mdshaharulsiyam/CareerHunt-client-side" >github repo</a>
+                                                    </button>
+                                                </div>
+                                                <div className="bg-red-50 shadow-2xl p-2 rounded-md">
+                                                    <h3 className="text-center font-bold text-lg">FrankStore</h3>
+                                                    <div className="h-56 overflow-hidden w-full">
+                                                        <Swiper pagination={true} autoplay={{ delay: 1500, disableOnInteraction: false }} modules={[Pagination, Autoplay]} className="mySwiper ">
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/CtYjCXm/screencapture-storied-stardust-becd39-netlify-app-2024-01-10-15-08-16.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/PGFt1BG/screencapture-storied-stardust-becd39-netlify-app-products-2024-01-10-15-09-00.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/mGGYG8B/screencapture-storied-stardust-becd39-netlify-app-product-Deails-65965d51fa01212b0efd3a1e-2024-01-10.png" alt="" />
+                                                            </SwiperSlide>
+
+                                                        </Swiper>
+                                                    </div>
+                                                    <button className="px-4 ml-2 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold">
+                                                        <a target="_blank" href="https://storied-stardust-becd39.netlify.app/">visit site</a>
+                                                    </button>
+                                                    <button className="px-4 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold ml-2 ">
+                                                        <a target="_blank" href="https://github.com/mdshaharulsiyam/FrankStore-Clint" >github repo</a>
+                                                    </button>
+                                                </div>
+                                                <div className="bg-red-50 shadow-2xl p-2 rounded-md">
+                                                    <h3 className="text-center font-bold text-lg">FoodWave</h3>
+                                                    <div className="h-56 overflow-hidden w-full">
+                                                        <Swiper pagination={true} autoplay={{ delay: 1500, disableOnInteraction: false }} modules={[Pagination, Autoplay]} className="mySwiper ">
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/Dw9gVrt/screencapture-imaginative-ganache-4b307c-netlify-app-2023-12-11-15-10-37-1.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/LRbmrZr/screencapture-imaginative-ganache-4b307c-netlify-app-manage-Food-2023-12-11-15-12-54.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/GR3mCxb/screencapture-imaginative-ganache-4b307c-netlify-app-addfood-2023-12-11-16-07-07.png" alt="" />
+                                                            </SwiperSlide>
+
+                                                        </Swiper>
+                                                    </div>
+                                                    <button className="px-4 ml-2 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold">
+                                                        <a target="_blank" href="https://imaginative-ganache-4b307c.netlify.app/">visit site</a>
+                                                    </button>
+                                                    <button className="px-4 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold ml-2 ">
+                                                        <a target="_blank" href="https://github.com/mdshaharulsiyam/FoodWave-clint" >github repo</a>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <h3 class="text-[35px] dark:text-white font-bold font-robotoSlab pb-5"> My Code Projects</h3>
                                             <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                                                <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
+
+                                                    <i id="project_icon" class="fa-regular fa-file-code"></i>
+                                                    <div class="space-y-2">
+                                                        <h3 class="dark:text-white text-[22px] font-semibold">React js projects </h3>
+                                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                                            <ul style={{ listStyleType: 'none' }}>
+                                                                <li class="project_list"><a class="projects" target="_blank" href="https://inquisitive-crostata-58e820.netlify.app/">Donation Campaign</a></li>
+                                                                <li class="project_list"><a class="projects" target="_blank" href="https://gentle-lokum-e57234.netlify.app/">Course Registration</a></li>
+                                                                <li class="project_list"><a class="projects" target="_blank" href="https://hilarious-longma-dfd9d4.netlify.app/">Elegance Wedding’s</a></li>
+                                                                <li class="project_list"><a class="projects" target="_blank" href="https://phenomenal-cucurucho-5e2af2.netlify.app/">Eagle Tech</a></li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
                                                 <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
                                                     <i style={{ fontSize: '40px' }} id="project_icon" class="fa-regular fa-file-code"></i>
                                                     <div class="space-y-2">
@@ -88,21 +172,7 @@ const Works = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
 
-                                                    <i id="project_icon" class="fa-regular fa-file-code"></i>
-                                                    <div class="space-y-2">
-                                                        <h3 class="dark:text-white text-[22px] font-semibold">React js projects </h3>
-                                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
-                                                            <ul style={{ listStyleType: 'none' }}>
-                                                                <li class="project_list"><a class="projects" target="_blank" href="https://inquisitive-crostata-58e820.netlify.app/">Donation Campaign</a></li>
-                                                                <li class="project_list"><a class="projects" target="_blank" href="https://gentle-lokum-e57234.netlify.app/">Course Registration</a></li>
-                                                                <li class="project_list"><a class="projects" target="_blank" href="https://hilarious-longma-dfd9d4.netlify.app/">Elegance Wedding’s</a></li>
-                                                                <li class="project_list"><a class="projects" target="_blank" href="https://phenomenal-cucurucho-5e2af2.netlify.app/">Eagle Tech</a></li>
-                                                            </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
                                                 <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
 
                                                     <i id="project_icon" class="fa-regular fa-file-code"></i>

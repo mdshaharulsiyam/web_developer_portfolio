@@ -1,4 +1,4 @@
-#mainmenu .active .menu-item{
+#mainmenu .active .menu-item,#mainmenu .active .mobile-menu-items{
     color: wheat;
     background: rgba(226, 75, 100, 0.959);
 }
