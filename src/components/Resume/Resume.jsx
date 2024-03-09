@@ -99,7 +99,7 @@ const Resume = () => {
 
                                             <div class="mb-5">
                                                 <div class="flex justify-between mb-1">
-                                                    <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6]">Background with node js</span>
+                                                    <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6]">backend with node js</span>
                                                     <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6">70%</span>
                                                 </div>
                                                 <div class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
@@ -108,7 +108,7 @@ const Resume = () => {
                                             </div>
                                             <div class="mb-5">
                                                 <div class="flex justify-between mb-1">
-                                                    <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6]">Background with php</span>
+                                                    <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6]">backend with php</span>
                                                     <span class=" font-semibold text-[#526377] dark:text-[#A6A6A6">55%</span>
                                                 </div>
                                                 <div class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">

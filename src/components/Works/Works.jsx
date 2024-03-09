@@ -7,6 +7,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import image1 from '../../../public/images/webs/screencapture-pet-adopter-nu-vercel-app-2024-03-09-03_43_00.png'
 // import './styles.css';
 import { Pagination, Autoplay } from 'swiper/modules';
 const Works = () => {
@@ -43,6 +44,30 @@ const Works = () => {
                                         <div class="pb-12 px-2 sm:px-5 md:px-10 lg:px-14 dark:text-white">
                                             <h3 class="text-[35px] dark:text-white font-bold font-robotoSlab pb-5"> Fetured Projects</h3>
                                             <div className='px-6 grid grid-cols-1 md:grid-cols-2 gap-2'>
+                                            <div className="bg-red-50 shadow-2xl p-2 rounded-md dark:bg-black">
+                                                    <h3 className="text-center font-bold text-lg">pet-adopter ( 6 members team project)</h3>
+                                                    <div className="h-56 overflow-hidden w-full">
+                                                        <Swiper pagination={true} autoplay={{ delay: 1500, disableOnInteraction: false }} modules={[Pagination, Autoplay]} className="mySwiper ">
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src='https://i.ibb.co/Z2hrThN/screencapture-pet-adopter-nu-vercel-app-2024-03-09-03-43-00.png' alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/yyg8rfk/screencapture-pet-adopter-nu-vercel-app-pet-listing-2024-03-09-03-48-36.png" alt="" />
+                                                            </SwiperSlide>
+                                                            <SwiperSlide>
+                                                                <img className="w-full h-full overflow-hidden object-cover" src="https://i.ibb.co/JnZYXGh/screencapture-pet-adopter-nu-vercel-app-paydonation-2024-03-09-03-50-41.png" alt="" />
+                                                            </SwiperSlide>
+
+                                                        </Swiper>
+                                                    </div>
+                                                    <button className="px-4 ml-2 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold">
+                                                        <a target="_blank" href="https://pet-adopter-nu.vercel.app/">visit site</a>
+                                                    </button>
+                                                    <button className="px-4 py-1 bg-slate-400 rounded-md mt-2 uppercase font-semibold ml-2 ">
+                                                        <a target="_blank" href="https://github.com/akdmousom/pet-adopter" >github repo</a>
+                                                    </button>
+                                                </div>
+                                                {/* team project */}
                                                 <div className="bg-red-50 shadow-2xl p-2 rounded-md dark:bg-black">
                                                     <h3 className="text-center font-bold text-lg">CareerHunt</h3>
                                                     <div className="h-56 overflow-hidden w-full">
